@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	//带缓冲的channel 缺点：容量不好控制
 	var ch = make(chan int, 10)
 	for i := 0; i < 10; i++ {
 		select {
