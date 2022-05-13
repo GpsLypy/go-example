@@ -1,0 +1,4 @@
+github.com/qianlnk/pgbar v0.0.0-20210208085217-8c19b9f2477e h1:d2mxZa66Z5wS4zhRt8KiMmzIPLzZsMnYHR+uWXGz6m0=
+github.com/qianlnk/pgbar v0.0.0-20210208085217-8c19b9f2477e/go.mod h1:4YWkn3EVkh8c1BDlVmw+Zh2QLhs+MbAg4xy4RqcKMsA=
+github.com/qianlnk/to v0.0.0-20191230085244-91e712717368 h1:YWi/c6UOBSwKWfFwYd3B6kZW2GGjCFPKJxUE37IPyFQ=
+github.com/qianlnk/to v0.0.0-20191230085244-91e712717368/go.mod h1:HYAQIJIdgW9cGr75BDsucQMgKREt00mECJHOskH5n5k=

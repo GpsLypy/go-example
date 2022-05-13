@@ -1,0 +1,11 @@
+goroutine 1 [running]:
+runtime/pprof.writeGoroutineStacks({0x804d80, 0xc000006048})
+	D:/Go/src/runtime/pprof/pprof.go:693 +0x70
+runtime/pprof.writeGoroutine({0x804d80, 0xc000006048}, 0x804d80)
+	D:/Go/src/runtime/pprof/pprof.go:682 +0x2b
+runtime/pprof.(*Profile).WriteTo(0x7dc1bf, {0x804d80, 0xc000006048}, 0x9)
+	D:/Go/src/runtime/pprof/pprof.go:331 +0x14b
+main.genProfile({0xc00000a168, 0x13}, {0x7dc1bf, 0x9}, 0x60)
+	d:/gostudy/src/taster/article37/q4/demo99.go:73 +0x405
+main.main()
+	d:/gostudy/src/taster/article37/q4/demo99.go:50 +0x189
