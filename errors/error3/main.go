@@ -20,5 +20,4 @@ func main() {
 	Check(-1)
 }
 
-
-sentinel error 预定义的，比如错误码
+//sentinel error 预定义的，比如错误码
