@@ -14,7 +14,7 @@ func main() {
 	fmt.Println(111)
 	if err != nil {
 		log.Fatal(err)
-	}·
+	}
 	fmt.Println(222)
 	file, _ := client.Open("/test.txt")
 

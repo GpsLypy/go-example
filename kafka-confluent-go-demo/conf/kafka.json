@@ -1,0 +1,10 @@
+{
+  "topic": "AG-monitor.dbo.zc_test9",
+  "topic2": "XXX",
+  "group.id": "org.apache.kafka",
+  "bootstrap.servers" : "172.30.113.16:9092",
+  "security.protocol" : "PLAINTEXT",
+  "sasl.mechanism" : "PLAIN",
+  "sasl.username" : "XXX",
+  "sasl.password" : "XXX"
+}

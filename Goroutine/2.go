@@ -1,3 +1,4 @@
+package main
 //goroutine泄漏,没有人会对此通道发信号
 
 /*
