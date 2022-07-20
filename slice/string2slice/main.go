@@ -17,4 +17,5 @@ func main() {
 	b := *(*[]byte)(unsafe.Pointer(&ssh))
 	//转为指针指向的实际内容
 	fmt.Printf("%v", b)
+	//git test
 }
