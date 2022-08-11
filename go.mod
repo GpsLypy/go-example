@@ -14,6 +14,7 @@ require (
 
 require (
 	github.com/alicebob/gopher-json v0.0.0-20200520072559-a9ecdc9d1d3a // indirect
+	github.com/bytedance/godlp v1.2.15 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
 	github.com/confluentinc/confluent-kafka-go v1.9.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -53,6 +54,7 @@ require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/alicebob/miniredis/v2 v2.20.0
 	github.com/go-redis/redis/v8 v8.11.5
+	github.com/go-sql-driver/mysql v1.6.0
 	github.com/shirou/gopsutil v3.21.11+incompatible
 	golang.org/x/sys v0.0.0-20220422013727-9388b58f7150 // indirect
 	golang.org/x/tools v0.1.10 // indirect
