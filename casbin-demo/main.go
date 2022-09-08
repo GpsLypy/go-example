@@ -82,7 +82,7 @@ import (
 
 func main() {
 
-	a, err := xormadapter.NewAdapter("mysql", "root:password#dbr@tcp(10.100.156.210:3306)/")
+	a, err := xormadapter.NewAdapter("mysql", "")
 	if err != nil {
 		fmt.Println("NewAdapter", err)
 	}
