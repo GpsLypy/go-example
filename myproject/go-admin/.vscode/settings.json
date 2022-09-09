@@ -1,0 +1,8 @@
+{
+    
+    "go.toolsGopath": "~/go",
+    "go.lintOnSave": "workspace",
+    "gopls": {
+        "verboseOutput": true
+      }
+}
