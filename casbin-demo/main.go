@@ -80,9 +80,20 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+//----简单实现权限验证系统。
+//新增一个规则，就重新加载一次规则列表
+//通过request 获取用户，查询其所属的角色是什么
+//调用casbin提供的接口进行权限验证。
+
+//1、调研
+//2、测试
+//3、封装
+//4、验证
+//5、上线
+
 func main() {
 
-	a, err := xormadapter.NewAdapter("mysql", "root:")
+	a, err := xormadapter.NewAdapter("mysql", "")
 	if err != nil {
 		fmt.Println("NewAdapter", err)
 	}
@@ -120,6 +131,17 @@ func main() {
 	r.Use(LanjieqiHandler(e))
 	//创建请求
 	r.GET("/api/v1/aa", func(c *gin.Context) {
+		var message string = "成功"
+		var code int = 200
+		var aa string = "data"
+		c.JSON(http.StatusOK, gin.H{
+			"code":    code,
+			"message": message,
+			"data":    aa,
+			"result":  "true",
+		})
+	})
+	r.POST("/api/v1/aa", func(c *gin.Context) {
 		var message string = "成功"
 		var code int = 200
 		var aa string = "data"
