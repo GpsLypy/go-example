@@ -84,7 +84,7 @@ import (
 //新增一个规则，就重新加载一次规则列表
 //通过request 获取用户，查询其所属的角色是什么
 //调用casbin提供的接口进行权限验证。
-
+//增加用户所属角色接口
 //1、调研
 //2、测试
 //3、封装
@@ -93,7 +93,7 @@ import (
 
 func main() {
 
-	a, err := xormadapter.NewAdapter("mysql", "")
+	a, err := xormadapter.NewAdapter("mysql", "ro")
 	if err != nil {
 		fmt.Println("NewAdapter", err)
 	}
@@ -153,6 +153,17 @@ func main() {
 		})
 	})
 
+	r.GET("/api/v1/bb", func(c *gin.Context) {
+		var message string = "成功"
+		var code int = 200
+		var aa string = "data"
+		c.JSON(http.StatusOK, gin.H{
+			"code":    code,
+			"message": message,
+			"data":    aa,
+			"result":  "true",
+		})
+	})
 	r.Run(":9090") //参数为空 默认监听8080端口
 }
 
@@ -167,7 +178,7 @@ func LanjieqiHandler(e *casbin.Enforcer) gin.HandlerFunc {
 		//获取请求方法
 		act := c.Request.Method
 		//获取用户的角色
-		sub := "admin"
+		sub := "user"
 
 		//判断策略中是否存在
 		aa, err := e.Enforce(sub, obj, act)
